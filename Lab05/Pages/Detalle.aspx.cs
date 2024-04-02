@@ -29,5 +29,15 @@ namespace Lab05.Pages
                 }
             }
         }
+
+        protected void BtnEliminarSesion_Click(object sender, EventArgs e)
+        {
+            //Eliminar sesion y limpiar variables
+            Session.Clear();
+            Session.Abandon();
+
+            //Redireccionar al formulario de registro
+            Response.Redirect("Formulario.aspx");
+        }
     }
 }

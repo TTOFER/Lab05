@@ -19,6 +19,8 @@
     </div>
 
     <div>
-        <a href="Formulario.aspx" class="btn btn-primary">Regresar</a>
+        <asp:Button ID="BtnEliminarSesion" runat="server" Text="Regresar"
+            BackColor="#99CCFF" ForeColor="White"
+            CssClass="btn btn-primary" OnClick="BtnEliminarSesion_Click"/>
     </div>
 </asp:Content>
